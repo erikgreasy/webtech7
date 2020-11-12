@@ -1,0 +1,30 @@
+{
+    "photos":
+    [
+        {
+            "src": "e46.jpg",
+            "title": "BMW e46 touring",
+            "description": "BMW tretej generácie kombi"
+        },
+        {
+            "src": "mountains.jpg",
+            "title": "Snow everywhere",
+            "description": "Dievča v horách počas snehovej búrky"
+        },
+        {
+            "src": "photography.jpg",
+            "title": "Analog snow",
+            "description": "Klasická fotografia zachytená počas sneženia"
+        },
+        {
+            "src": "snowboarding.jpg",
+            "title": "Snowboard diaries 2.0",
+            "description": "Snowboarding s priatelmi, čo viac"
+        },
+        {
+            "src": "white_bmw.jpg",
+            "title": "White BMW",
+            "description": "Nová generácia trojkového bavoráku, skrátka elegancia"
+        }   
+    ]
+}
