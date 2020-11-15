@@ -4,27 +4,27 @@
         {
             "src": "e46.jpg",
             "title": "BMW e46 touring",
-            "description": "BMW tretej generácie kombi"
+            "description": "Blue BMW, third generation touring"
         },
         {
             "src": "mountains.jpg",
-            "title": "Snow everywhere",
-            "description": "Dievča v horách počas snehovej búrky"
+            "title": "Girl in the snowy nature",
+            "description": "Girl in the mountains during snow storm"
         },
         {
             "src": "photography.jpg",
-            "title": "Analog snow",
-            "description": "Klasická fotografia zachytená počas sneženia"
+            "title": "Boy taking classic photography",
+            "description": "Analog photo is not dead. This boy with classic camera is the prove."
         },
         {
             "src": "snowboarding.jpg",
-            "title": "Snowboard diaries 2.0",
-            "description": "Snowboarding s priatelmi, čo viac"
+            "title": "Friends snowboarding in the nature",
+            "description": "Snowboarding trip with friends to the beautiful Austria"
         },
         {
             "src": "white_bmw.jpg",
-            "title": "White BMW",
-            "description": "Nová generácia trojkového bavoráku, skrátka elegancia"
+            "title": "White BMW sedan",
+            "description": "New generation of BMW, white sedan meets the elegance needs"
         }   
     ]
 }
