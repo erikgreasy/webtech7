@@ -3,34 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zadanie 7 | Erik Masny</title>
     
     <!-- FONTS -->
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+    
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/app.css">
 
-</head>
-<body>
     
-    <h1>Fungujem</h1>
 
-    <div>
-        <input type="text" id="filterInput">
-    </div>
-    <div id="app">
+</head>
+<body class="bg-light">
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" data-slideshow="false" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <img src="" alt="" class="modal-img">
+                <h5 class="img-title mt-3"></h5>
+                <p class="img-desc"></p>
+                <div class="modal-images-control">
+                    
+                    <a href="#" class="prev-image">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+        
+                    </a>
+                    <a href="#" class="next-image">
+        
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="startSlideshow" class="btn btn-dark">Slideshow</button>
+                <button id="stopSlideshow" class="btn btn-dark">Stop</button>
 
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+            
+          </div>
+        </div>
     </div>
+    <div class="container">
+        <h1 class="text-center my-4">Craziest gallery you ever see</h1>
+
+        <div class="text-center mb-3">
+            <input type="text" id="filterInput" class="form-control" placeholder="What u searchin for?">
+        </div>
+
+        <div id="app" >
+    
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center mt-5 py-3">
+        <p class="mb-0">&copy;Erik Masny | Pictures stolen from pexels</p>
+    </footer>
 
     <!-- JQUERY -->
     <script src="assets/js/jquery.min.js"></script>
+
+    <!-- MINISEARCH -->
     <script src="https://cdn.jsdelivr.net/npm/minisearch@3.0.1/dist/umd/index.min.js"></script>
-    <script src="//unpkg.com/string-similarity/umd/string-similarity.min.js"></script>
-    <!-- SCRIPTS -->
+
+    <!-- JQUERY UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
