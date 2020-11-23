@@ -2,6 +2,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+  min-height: 80vh;
+}
+
 p {
   font-weight: 300;
 }
@@ -105,11 +109,5 @@ input {
 
 .modal[data-slideshow="true"] #stopSlideshow {
   display: inline-block;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */

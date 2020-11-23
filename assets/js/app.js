@@ -1,8 +1,9 @@
 
 $(document).ready(function() {
 
+    let imgEl = '<img src="" class="modal-img">';
+    $('.modal-body').prepend( imgEl )
     var settingCookie = true
-
     // CLEAR COOKIE
     // setCookie('imagesOrder', '')
     
@@ -27,7 +28,7 @@ $(document).ready(function() {
         }
 
 
-        let photosLinks = photosSrc.map( photo => '/assets/images/thumbnails/' + photo )
+        let photosLinks = photosSrc.map( photo => 'assets/images/thumbnails/' + photo )
 
         renderImages( photosLinks )
         miniSearch.addAll(photos)
@@ -49,7 +50,7 @@ $(document).ready(function() {
                 settingCookie = false
                 let filteredLinks = []
                 results.forEach( result => {
-                    filteredLinks.push( '/assets/images/thumbnails/' + result.src )
+                    filteredLinks.push( 'assets/images/thumbnails/' + result.src )
                 } )
 
                 renderImages( filteredLinks )
@@ -151,7 +152,7 @@ function showPrevious( openImage ) {
 
 
 
-    $('#exampleModalCenter').find('.modal-img').attr('src', images[clickedIndex -1 ].src )
+    $('#exampleModalCenter').find('.modal-img').attr('src', 'assets/images/' + getImageNameFromSrc( images[clickedIndex -1 ].src ) )
     let desc;
     let title;
 
@@ -190,15 +191,15 @@ function showNext( openImage, slideshow = false ) {
 
     if(slideshow) {
         if( clickedIndex == images.length-1 ) {
-            $('#exampleModalCenter').find('.modal-img').attr('src', images[ 0 ].src )
+            $('#exampleModalCenter').find('.modal-img').attr('src', 'assets/images/' + getImageNameFromSrc( images[ 0 ].src ) )
 
         } else {
-            $('#exampleModalCenter').find('.modal-img').attr('src', images[clickedIndex +1 ].src )
+            $('#exampleModalCenter').find('.modal-img').attr('src', 'assets/images/' + getImageNameFromSrc( images[clickedIndex +1 ].src ) )
 
         }
     } else {
 
-        $('#exampleModalCenter').find('.modal-img').attr('src', images[clickedIndex +1 ].src )
+        $('#exampleModalCenter').find('.modal-img').attr('src', 'assets/images/' + getImageNameFromSrc( images[clickedIndex +1 ].src ) )
     }
 
     
@@ -206,7 +207,6 @@ function showNext( openImage, slideshow = false ) {
 
     let desc;
     let title;
-    console.log(clickedIndex)
     photos.forEach( img => {
         if( clickedIndex == images.length-1  ) {
             clickedIndex = -1
@@ -225,7 +225,8 @@ function showNext( openImage, slideshow = false ) {
 
 function makeImagesOpenable(  ) {
     $('.gallery-img').on('click', function() {
-        $('#exampleModalCenter').find('.modal-img').attr('src', '/assets/images/' + getImageNameFromSrc( this.src ))
+        
+        $('#exampleModalCenter').find('.modal-img').attr('src', 'assets/images/' + getImageNameFromSrc( this.src ))
         
         let images = getActualShownImages()
 
@@ -294,9 +295,11 @@ function getImagesFromCookie() {
 }
 
 function createLinkArrayFromSrcArray( srcArray ) {
+    var siteUrl = 'http://147.175.121.202/~xmasnye/7_lubim_dominiku/';
+    
     let linkArray = []
     srcArray.forEach( src => {
-        linkArray.push( '/assets/images/thumbnails/' + src )
+        linkArray.push( siteUrl + 'assets/images/thumbnails/' + src )
     } )
 
     return linkArray
